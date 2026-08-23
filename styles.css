@@ -172,18 +172,8 @@ em { color: var(--sky); font-style: italic; }
 .product-card h3 { margin-top: .5rem; margin-bottom: .3rem; font: 700 1.6rem var(--display); text-transform: uppercase; }
 .product-card p { margin-top: 0; color: var(--muted); font-size: .7rem; }
 .product-card button { padding: .7rem 0; border: 0; border-bottom: 1px solid #9aabba; background: transparent; cursor: pointer; font-size: .6rem; font-weight: 800; text-transform: uppercase; }
-.shirt, .cap { height: 280px; margin-bottom: 1.2rem; display: grid; place-items: center; position: relative; overflow: hidden; background: #e6ecf0; }
-.shirt::before { content: ""; width: 170px; height: 210px; clip-path: polygon(25% 0, 42% 8%, 58% 8%, 75% 0, 100% 17%, 84% 38%, 75% 32%, 79% 100%, 21% 100%, 25% 32%, 16% 38%, 0 17%); background: linear-gradient(90deg, #55bbed, #9ddcfa 50%, #55bbed); filter: drop-shadow(0 14px 15px rgba(4,28,55,.18)); }
-.away-shirt::before { background: linear-gradient(90deg, #e6e8e9, white 50%, #e6e8e9); }
-.shirt img { position: absolute; width: 40px; top: 73px; left: calc(50% - 20px); }
-.cap::before { content: ""; width: 170px; height: 90px; background: var(--navy); border-radius: 80px 80px 25px 25px; box-shadow: 45px 45px 0 -20px #0a2444; transform: translateY(-15px); }
-.cap img { position: absolute; width: 42px; top: 84px; }
-
 .sponsors { text-align: center; background: #eef2f5; }
 .sponsors > p { color: var(--muted); font-size: .6rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
-.sponsor-row { margin: 2.5rem 0; display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid var(--line); }
-.sponsor-row span { min-height: 100px; display: grid; place-items: center; color: #82909c; background: white; border-right: 1px solid var(--line); font: 700 1rem/1.1 var(--display); }
-.sponsor-row span:last-child { border: 0; }
 
 .contact { display: grid; grid-template-columns: .8fr 1.2fr; gap: 6vw; color: white; background: var(--navy); }
 .contact-copy > p:not(.eyebrow) { color: #9fb4c5; line-height: 1.7; }
@@ -259,8 +249,6 @@ footer nav a { color: #9cb0bf; font-size: .62rem; font-weight: 700; letter-spaci
   .membership-photo { min-height: 390px; background: linear-gradient(0deg, var(--navy), transparent 55%), url("assets/plantel.webp") center / cover; }
   .membership-content { padding: 1rem 5vw 5rem; }
   .products { grid-template-columns: 1fr; }
-  .sponsor-row { grid-template-columns: 1fr 1fr; }
-  .sponsor-row span:last-child { grid-column: 1 / -1; }
 }
 
 @media (max-width: 460px) {
@@ -284,4 +272,137 @@ footer nav a { color: #9cb0bf; font-size: .62rem; font-weight: 700; letter-spaci
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Authentic media system */
+.hero-media {
+  background-image:
+    linear-gradient(90deg, rgba(2,16,34,.98) 0%, rgba(5,23,46,.84) 35%, rgba(5,23,46,.18) 75%),
+    linear-gradient(0deg, rgba(3,16,34,.8) 0%, transparent 45%),
+    url("assets/media/ascenso-1200.webp");
+}
+.brand img, .footer-brand img { aspect-ratio: 1; height: auto; filter: drop-shadow(0 5px 12px rgba(0,0,0,.2)); }
+.brand img { width: 58px; }
+.footer-brand img { width: 64px; }
+.team-crest { width: 96px; height: 96px; }
+.team-crest img { width: 90px; height: 90px; object-fit: contain; filter: drop-shadow(0 8px 14px rgba(0,0,0,.24)); }
+.result-card .result-team { display: grid; grid-template-columns: 34px 1fr auto; gap: .7rem; }
+.result-team img { width: 30px; height: 30px; object-fit: contain; }
+
+.squad-backdrop { background-image: url("assets/media/partido-1200.webp"); }
+.section-heading.light, .squad-photo, .player-grid, .data-note { position: relative; z-index: 2; }
+.squad-photo { margin: 0 0 1.2rem; height: min(48vw, 520px); position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,.12); }
+.squad-photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(2,14,30,.95), transparent 60%); }
+.squad-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 42%; }
+.squad-photo figcaption { position: absolute; z-index: 2; left: 2rem; right: 2rem; bottom: 1.8rem; display: flex; flex-direction: column; }
+.squad-photo figcaption span { color: var(--sky); font-size: .62rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.squad-photo figcaption strong { max-width: 700px; margin-top: .4rem; font: 800 clamp(2rem, 4vw, 4rem)/.9 var(--display); text-transform: uppercase; }
+.player-grid { gap: .65rem; }
+.player-card { min-height: 165px; padding: 1.1rem; background: linear-gradient(145deg, rgba(22,62,99,.94), rgba(5,24,48,.98)); }
+.player-card::before { content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--sky); transform: scaleY(0); transform-origin: bottom; transition: transform .25s; }
+.player-card:hover::before { transform: scaleY(1); }
+.player-card::after { display: none; }
+.player-card .number { top: -.8rem; font-size: 5rem; }
+.profile-tag { position: absolute; left: 1.1rem; top: 1rem; color: #87a2b8; font-size: .5rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+
+.discipline-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; min-height: 0; }
+.discipline-card, .discipline-card + .discipline-card { min-height: 390px; padding: 1.7rem; position: relative; isolation: isolate; overflow: hidden; color: white; border: 0; background: var(--navy); }
+.discipline-card::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(0deg, rgba(2,17,35,.96) 5%, rgba(2,17,35,.18) 78%); }
+.discipline-card img { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .55s ease; }
+.discipline-card:nth-child(2) img { object-position: center 28%; }
+.discipline-card:nth-child(3) img { object-position: center; }
+.discipline-card:nth-child(4) img { object-position: 70% center; filter: saturate(.6); }
+.discipline-card:hover, .discipline-card.featured { color: white; transform: translateY(-5px); background: var(--navy); }
+.discipline-card:hover img { transform: scale(1.045); }
+.discipline-card > span { color: white; font-size: .75rem; }
+.discipline-card p { color: var(--sky); }
+.discipline-card h3 { font-size: 3.3rem; }
+.discipline-card small { position: absolute; right: 1rem; top: 1rem; padding: .45rem .55rem; color: #d9e6ef; background: rgba(3,17,35,.72); font-size: .48rem; letter-spacing: .1em; text-transform: uppercase; }
+.formative-banner { background-image: linear-gradient(110deg, rgba(4,28,56,.95), rgba(6,55,95,.75)), url("assets/media/plantel-1200.webp"); }
+.membership-photo { background-image: linear-gradient(90deg, transparent 60%, var(--navy)), url("assets/media/plantel-1200.webp"); }
+
+.store-intro { margin-bottom: 1.2rem; display: grid; grid-template-columns: 1.3fr .7fr; min-height: 480px; color: white; background: var(--navy); }
+.store-intro picture { min-height: 480px; overflow: hidden; }
+.store-intro picture img { width: 100%; height: 100%; object-fit: cover; }
+.store-intro > div { padding: clamp(2rem, 4vw, 4rem); display: flex; flex-direction: column; justify-content: center; }
+.store-intro > div > span { color: var(--sky); font-size: .62rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.store-intro h3 { margin: .9rem 0 1rem; font: 800 clamp(2.4rem, 4vw, 4.2rem)/.9 var(--display); text-transform: uppercase; }
+.store-intro p { margin: 0 0 1.7rem; color: #b4c8d8; font-size: .78rem; line-height: 1.7; }
+.store-intro .button { align-self: flex-start; }
+.product-card { overflow: hidden; transition: transform .25s, box-shadow .25s; }
+.product-card:hover { transform: translateY(-6px); box-shadow: 0 18px 38px rgba(8,29,52,.12); }
+.product-image { height: 390px; margin-bottom: 1.25rem; overflow: hidden; background: #e9eef2; }
+.product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.product-card:first-child .product-image img { object-position: center 42%; }
+.product-card:nth-child(2) .product-image img { object-position: center; }
+.product-card:nth-child(3) .product-image img { object-position: center 48%; }
+.product-card:hover .product-image img { transform: scale(1.035); }
+
+.sponsors { text-align: left; color: white; background: #041428; }
+.sponsors::before { content: ""; position: absolute; }
+.sponsors-heading { max-width: 920px; }
+.sponsors-heading h2 { max-width: 900px; font: 800 clamp(3rem, 5vw, 5.5rem)/.88 var(--display); text-transform: uppercase; }
+.sponsors-heading > p:last-child { max-width: 650px; margin: 1.4rem 0 0; color: #9bb0c1; line-height: 1.7; font-size: .82rem; }
+.sponsor-stage { margin: 3.5rem 0 1.5rem; display: grid; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: repeat(2, minmax(200px, 1fr)); gap: 1px; overflow: hidden; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.14); }
+.sponsor-card { min-width: 0; padding: 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: var(--ink); background: white; }
+.sponsor-card small { align-self: flex-start; margin-bottom: auto; color: #758697; font-size: .5rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.sponsor-card strong { display: block; margin: 1rem 0; }
+.sponsor-card > span { margin-top: auto; color: #7b8996; font-size: .54rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.sponsor-lead { grid-row: 1 / 3; color: white; background: linear-gradient(145deg, #e7332a, #a90e16); }
+.sponsor-lead small, .sponsor-lead > span { color: rgba(255,255,255,.72); }
+.masbar-mark { font: italic 900 clamp(3.5rem, 7vw, 7rem)/1 var(--display); letter-spacing: -.04em; text-transform: uppercase; }
+.masbar-mark::after { content: ""; display: block; width: 54%; height: 6px; margin: .25rem auto 0; background: white; transform: skewX(-28deg); }
+.la-perla { grid-column: 2 / 4; color: white; background: #101010; }
+.la-perla small, .la-perla > span { color: #aaa; }
+.la-perla strong { font: 500 clamp(2.5rem, 5vw, 5rem)/1 Georgia, serif; letter-spacing: -.06em; }
+.pm-autos { background: #f1f5f7; }
+.pm-autos strong { font: 900 clamp(2.2rem, 3.5vw, 3.6rem)/1 var(--display); text-transform: uppercase; }
+.pm-autos strong i { color: #ed2635; font-weight: 700; }
+.alra-sur img { width: min(90%, 260px); height: auto; }
+.sponsor-note { max-width: 850px; margin: 0 0 1.4rem; color: #71899c !important; font-size: .56rem !important; line-height: 1.6; letter-spacing: .08em !important; text-transform: uppercase; }
+.sponsors .text-link { color: white; border-color: #486176; }
+
+@media (max-width: 1050px) {
+  .news-card { grid-template-columns: 42% 58%; }
+  .news-card img { display: block; }
+  .products { gap: .8rem; }
+  .product-image { height: 330px; }
+}
+
+@media (max-width: 760px) {
+  .brand img { width: 48px; height: 48px; }
+  .hero-media { background-image: linear-gradient(0deg, rgba(2,16,34,.98) 10%, rgba(5,23,46,.25) 78%), url("assets/media/ascenso-720.webp"); background-position: 62% center; }
+  .result-card { padding: 1.3rem 1.1rem; }
+  .result-card .result-status { position: static; display: block; margin-bottom: 1rem; }
+  .squad-photo { height: 430px; }
+  .squad-photo img { object-position: 57% center; }
+  .squad-photo figcaption { left: 1.2rem; right: 1.2rem; bottom: 1.2rem; }
+  .player-grid { grid-template-columns: repeat(2, 1fr); }
+  .player-card { min-height: 150px; }
+  .discipline-grid { grid-template-columns: 1fr; }
+  .discipline-card, .discipline-card + .discipline-card { min-height: 360px; border: 0; }
+  .membership-photo { background-image: linear-gradient(0deg, var(--navy), transparent 55%), url("assets/media/plantel-720.webp"); }
+  .formative-banner { background-image: linear-gradient(110deg, rgba(4,28,56,.95), rgba(6,55,95,.75)), url("assets/media/plantel-720.webp"); }
+  .store-intro { grid-template-columns: 1fr; }
+  .store-intro picture { min-height: 330px; }
+  .store-intro > div { padding: 2rem 1.4rem 2.5rem; }
+  .products { grid-template-columns: 1fr; }
+  .product-image { height: min(115vw, 480px); }
+  .sponsor-stage { grid-template-columns: 1fr; grid-template-rows: none; }
+  .sponsor-lead, .la-perla { grid-column: auto; grid-row: auto; min-height: 330px; }
+  .sponsor-card { min-height: 210px; }
+}
+
+@media (max-width: 460px) {
+  .team-crest { width: 68px; height: 68px; }
+  .team-crest img { width: 64px; height: 64px; }
+  .result-card .result-team { grid-template-columns: 28px 1fr auto; gap: .55rem; }
+  .result-team img { width: 26px; height: 26px; }
+  .result-card div strong { font-size: .95rem; }
+  .player-grid { grid-template-columns: 1fr; }
+  .discipline-card h3 { font-size: 2.8rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }

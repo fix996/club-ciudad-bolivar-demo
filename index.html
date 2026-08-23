@@ -6,7 +6,8 @@
   <meta name="description" content="Propuesta web institucional para el Club Ciudad de Bolívar.">
   <meta name="theme-color" content="#071b35">
   <title>Club Ciudad de Bolívar | Propuesta digital</title>
-  <link rel="icon" type="image/png" href="assets/escudo.png">
+  <link rel="icon" type="image/png" href="assets/teams/ciudad.png">
+  <link rel="preload" as="image" href="assets/media/ascenso-1200.webp" imagesrcset="assets/media/ascenso-720.webp 720w, assets/media/ascenso-1200.webp 1200w" imagesizes="100vw" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
 
   <header class="site-header" id="inicio">
     <a class="brand" href="#inicio" aria-label="Club Ciudad de Bolívar, inicio">
-      <img src="assets/escudo.png" alt="Escudo del Club Ciudad de Bolívar">
+      <img src="assets/teams/ciudad.png" width="500" height="500" alt="Escudo del Club Ciudad de Bolívar">
       <span><b>Ciudad</b> de Bolívar</span>
     </a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">
@@ -80,13 +81,13 @@
           <p class="match-date">Domingo 23 de agosto · 18:30 hs</p>
           <div class="teams">
             <div class="team">
-              <div class="team-crest"><img src="assets/escudo.png" alt=""></div>
+              <div class="team-crest"><img src="assets/teams/ciudad.png" width="500" height="500" alt="Escudo de Ciudad de Bolívar"></div>
               <strong>Ciudad de Bolívar</strong>
               <span>Local</span>
             </div>
             <div class="versus"><b>VS</b><span>Eva Perón</span></div>
             <div class="team">
-              <div class="team-crest rival">R</div>
+              <div class="team-crest"><img src="assets/teams/racing-cordoba.png" width="500" height="500" alt="Escudo de Racing de Córdoba"></div>
               <strong>Racing (Córdoba)</strong>
               <span>Visitante</span>
             </div>
@@ -98,15 +99,15 @@
           <article class="result-card">
             <span class="result-status">Finalizado</span>
             <p>Primera Nacional · Fecha 25</p>
-            <div><strong>Agropecuario</strong><b>1</b></div>
-            <div><strong>Ciudad de Bolívar</strong><b>0</b></div>
+            <div class="result-team"><img src="assets/teams/agropecuario.png" width="500" height="500" alt=""><strong>Agropecuario</strong><b>1</b></div>
+            <div class="result-team"><img src="assets/teams/ciudad.png" width="500" height="500" alt=""><strong>Ciudad de Bolívar</strong><b>0</b></div>
             <time datetime="2026-08-15">15 AGO 2026</time>
           </article>
           <article class="result-card upcoming">
             <span class="result-status">Próximamente</span>
             <p>Primera Nacional · Fecha 27</p>
-            <div><strong>Ciudad de Bolívar</strong><b>—</b></div>
-            <div><strong>Def. de Belgrano</strong><b>—</b></div>
+            <div class="result-team"><img src="assets/teams/ciudad.png" width="500" height="500" alt=""><strong>Ciudad de Bolívar</strong><b>—</b></div>
+            <div class="result-team"><img src="assets/teams/defensores-belgrano.png" width="500" height="500" alt=""><strong>Def. de Belgrano</strong><b>—</b></div>
             <time datetime="2026-08-29">29 AGO · 19:00</time>
           </article>
         </div>
@@ -123,7 +124,7 @@
       </div>
       <div class="news-grid">
         <article class="news-feature reveal">
-          <img src="assets/ascenso.webp" alt="Festejo del ascenso del Club Ciudad de Bolívar a Primera Nacional">
+          <img src="assets/media/ascenso-1200.webp" srcset="assets/media/ascenso-720.webp 720w, assets/media/ascenso-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 52vw" width="1200" height="674" loading="lazy" decoding="async" alt="Festejo del ascenso del Club Ciudad de Bolívar a Primera Nacional">
           <div class="news-overlay">
             <span>Institucional</span>
             <time datetime="2025-10-19">19.10.2025</time>
@@ -132,7 +133,7 @@
           </div>
         </article>
         <article class="news-card reveal">
-          <img src="assets/estadio.webp" alt="Estadio Municipal Eva Perón renovado">
+          <img src="assets/media/estadio-720.webp" srcset="assets/media/estadio-720.webp 720w, assets/media/estadio-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 22vw" width="1200" height="900" loading="lazy" decoding="async" alt="Estadio Municipal Eva Perón renovado">
           <div>
             <span>Infraestructura</span>
             <time datetime="2026-02-23">23.02.2026</time>
@@ -141,7 +142,7 @@
           </div>
         </article>
         <article class="news-card reveal">
-          <img src="assets/plantel.webp" alt="Formación del Club Ciudad de Bolívar">
+          <img src="assets/media/plantel-720.webp" srcset="assets/media/plantel-720.webp 720w, assets/media/plantel-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 22vw" width="1200" height="900" loading="lazy" decoding="async" alt="Formación del Club Ciudad de Bolívar">
           <div>
             <span>Primera</span>
             <time datetime="2026-03-27">27.03.2026</time>
@@ -167,20 +168,24 @@
           <button type="button" data-filter="delantero">Delanteros</button>
         </div>
       </div>
+      <figure class="squad-photo reveal">
+        <img src="assets/media/partido-1200.webp" srcset="assets/media/partido-720.webp 720w, assets/media/partido-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 1240px" width="1200" height="798" loading="lazy" decoding="async" alt="Jugadores del Club Ciudad de Bolívar durante un partido de la temporada 2026">
+        <figcaption><span>Plantel profesional · Temporada 2026</span><strong>Las Águilas, listas para competir.</strong></figcaption>
+      </figure>
       <div class="player-grid reveal">
-        <article class="player-card" data-position="arquero"><span class="number">01</span><div class="player-avatar">AR</div><p>Arquero</p><h3>Agustín<br><b>Rufinetti</b></h3></article>
-        <article class="player-card" data-position="defensor"><span class="number">02</span><div class="player-avatar">EN</div><p>Defensor</p><h3>Ezequiel<br><b>Navarro</b></h3></article>
-        <article class="player-card" data-position="defensor"><span class="number">04</span><div class="player-avatar">AP</div><p>Defensor</p><h3>Agustín<br><b>Paredes</b></h3></article>
-        <article class="player-card" data-position="medio"><span class="number">08</span><div class="player-avatar">NY</div><p>Mediocampista</p><h3>Nahuel<br><b>Yeri</b></h3></article>
-        <article class="player-card" data-position="medio"><span class="number">10</span><div class="player-avatar">AG</div><p>Mediocampista</p><h3>Arnaldo<br><b>González</b></h3></article>
-        <article class="player-card" data-position="delantero"><span class="number">09</span><div class="player-avatar">JM</div><p>Delantero</p><h3>Juan<br><b>Maciel</b></h3></article>
+        <article class="player-card" data-position="arquero"><span class="number">01</span><span class="profile-tag">Ficha 2026</span><p>Arquero</p><h3>Agustín<br><b>Rufinetti</b></h3></article>
+        <article class="player-card" data-position="defensor"><span class="number">02</span><span class="profile-tag">Ficha 2026</span><p>Defensor</p><h3>Ezequiel<br><b>Navarro</b></h3></article>
+        <article class="player-card" data-position="defensor"><span class="number">04</span><span class="profile-tag">Ficha 2026</span><p>Defensor</p><h3>Agustín<br><b>Paredes</b></h3></article>
+        <article class="player-card" data-position="medio"><span class="number">08</span><span class="profile-tag">Ficha 2026</span><p>Mediocampista</p><h3>Nahuel<br><b>Yeri</b></h3></article>
+        <article class="player-card" data-position="medio"><span class="number">10</span><span class="profile-tag">Ficha 2026</span><p>Mediocampista</p><h3>Arnaldo<br><b>González</b></h3></article>
+        <article class="player-card" data-position="delantero"><span class="number">09</span><span class="profile-tag">Ficha 2026</span><p>Delantero</p><h3>Juan<br><b>Maciel</b></h3></article>
       </div>
-      <p class="data-note">Muestra de plantel 2026. La versión final puede conectarse a un panel para mantener nombres, dorsales y estadísticas siempre actualizados.</p>
+      <p class="data-note">Muestra de plantel 2026. Los retratos individuales se incorporarán únicamente con el archivo fotográfico validado por el club; la versión final podrá mantener fichas y estadísticas desde un panel.</p>
     </section>
 
     <section class="identity section" id="club" aria-labelledby="identity-title">
       <div class="identity-image reveal">
-        <img src="assets/estadio.webp" alt="Vista del renovado Estadio Municipal Eva Perón">
+        <img src="assets/media/estadio-1200.webp" srcset="assets/media/estadio-720.webp 720w, assets/media/estadio-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 48vw" width="1200" height="900" loading="lazy" decoding="async" alt="Vista del renovado Estadio Municipal Eva Perón">
         <div class="year-stamp"><strong>23</strong><span>años de<br>historia</span></div>
       </div>
       <div class="identity-copy reveal">
@@ -201,10 +206,23 @@
         </div>
       </div>
       <div class="discipline-grid reveal">
-        <article class="discipline-card featured"><span>01</span><div><p>Competencia nacional</p><h3>Fútbol</h3><a href="#plantel">Conocer más →</a></div></article>
-        <article class="discipline-card"><span>02</span><div><p>Historia y excelencia</p><h3>Vóley</h3><button class="demo-action" data-message="Sección de vóley incluida en la arquitectura propuesta.">Conocer más →</button></div></article>
-        <article class="discipline-card"><span>03</span><div><p>Las Indias</p><h3>Hockey</h3><button class="demo-action" data-message="Sección de hockey incluida en la arquitectura propuesta.">Conocer más →</button></div></article>
-        <article class="discipline-card"><span>04</span><div><p>Formación y disciplina</p><h3>Taekwondo</h3><button class="demo-action" data-message="Sección de taekwondo incluida en la arquitectura propuesta.">Conocer más →</button></div></article>
+        <article class="discipline-card featured">
+          <img src="assets/media/partido-720.webp" srcset="assets/media/partido-720.webp 720w, assets/media/partido-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 31vw" width="1200" height="798" loading="lazy" decoding="async" alt="Fútbol profesional de Ciudad de Bolívar">
+          <span>01</span><div><p>Competencia nacional</p><h3>Fútbol</h3><a href="#plantel">Conocer más →</a></div>
+        </article>
+        <article class="discipline-card">
+          <img src="assets/disciplines/voley-640.webp" srcset="assets/disciplines/voley-640.webp 640w, assets/disciplines/voley-1024.webp 1024w" sizes="(max-width: 760px) 92vw, 31vw" width="1024" height="683" loading="lazy" decoding="async" alt="Equipo de vóley del Club Ciudad de Bolívar">
+          <span>02</span><div><p>Historia y excelencia</p><h3>Vóley</h3><button class="demo-action" data-message="Sección de vóley incluida en la arquitectura propuesta.">Conocer más →</button></div>
+        </article>
+        <article class="discipline-card">
+          <img src="assets/disciplines/complejo-639.webp" width="639" height="352" loading="lazy" decoding="async" alt="Complejo José Domeño, sede de las disciplinas del club">
+          <span>03</span><div><p>Las Indias</p><h3>Hockey</h3><button class="demo-action" data-message="Sección de hockey incluida en la arquitectura propuesta. La foto específica del equipo se incorpora con el archivo oficial.">Conocer más →</button></div>
+        </article>
+        <article class="discipline-card archive-pending">
+          <img src="assets/disciplines/complejo-639.webp" width="639" height="352" loading="lazy" decoding="async" alt="Vista general del complejo deportivo del Club Ciudad de Bolívar">
+          <span>04</span><div><p>Formación y disciplina</p><h3>Taekwondo</h3><button class="demo-action" data-message="La fotografía específica de taekwondo se incorporará cuando el club valide su archivo visual.">Conocer más →</button></div>
+          <small>Foto de disciplina a validar</small>
+        </article>
       </div>
       <div class="formative-banner reveal">
         <div><span>Inferiores · Reserva · Escuela deportiva</span><h3>El futuro también se entrena.</h3><p>Un espacio propio para comunicar categorías, horarios, entrenadores, pruebas y novedades de las divisiones formativas.</p></div>
@@ -236,18 +254,33 @@
         </div>
         <button class="text-link demo-action" type="button" data-message="La tienda completa se desarrollaría en la etapa final, con stock, medios de pago y envíos definidos por el club.">Ir a la tienda <span>→</span></button>
       </div>
+      <div class="store-intro reveal">
+        <picture>
+          <source srcset="assets/store/tienda-640.webp 640w, assets/store/tienda-1024.webp 1024w" sizes="(max-width: 760px) 92vw, 62vw">
+          <img src="assets/store/tienda-1024.webp" width="1024" height="768" loading="lazy" decoding="async" alt="Interior de Celemanía, la tienda oficial del Club Ciudad de Bolívar">
+        </picture>
+        <div><span>Celemanía · Tienda oficial</span><h3>La identidad del club, en un espacio propio.</h3><p>Indumentaria y productos oficiales en Av. Almirante Brown 168, Bolívar. La compra online se integraría en la versión final.</p><button class="button button-light demo-action" type="button" data-message="La demo presenta el catálogo visual. Stock, precios, pagos y envíos se conectarán con la gestión real de Celemanía.">Explorar colección <span>→</span></button></div>
+      </div>
       <div class="products reveal">
-        <article class="product-card"><div class="shirt home-shirt"><img src="assets/escudo.png" alt=""></div><span>Indumentaria</span><h3>Camiseta titular 2026</h3><p>Producto demostrativo</p><button class="demo-action" data-message="Producto ilustrativo. Precio, stock y pagos se configurarían con el club.">Ver producto</button></article>
-        <article class="product-card"><div class="shirt away-shirt"><img src="assets/escudo.png" alt=""></div><span>Indumentaria</span><h3>Camiseta alternativa</h3><p>Producto demostrativo</p><button class="demo-action" data-message="Producto ilustrativo. Precio, stock y pagos se configurarían con el club.">Ver producto</button></article>
-        <article class="product-card"><div class="cap"><img src="assets/escudo.png" alt=""></div><span>Accesorios</span><h3>Gorra institucional</h3><p>Producto demostrativo</p><button class="demo-action" data-message="Producto ilustrativo. Precio, stock y pagos se configurarían con el club.">Ver producto</button></article>
+        <article class="product-card"><div class="product-image"><img src="assets/store/camiseta-640.webp" srcset="assets/store/camiseta-640.webp 640w, assets/store/camiseta-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 30vw" width="1200" height="1233" loading="lazy" decoding="async" alt="Camiseta oficial celeste de Ciudad de Bolívar para la temporada 2026"></div><span>Indumentaria oficial</span><h3>Camiseta titular 2026</h3><p>Modelo real · Marca Masbar</p><button class="demo-action" data-message="Producto real mostrado como referencia. Precio, talles y stock se confirmarían con Celemanía.">Ver producto</button></article>
+        <article class="product-card"><div class="product-image"><img src="assets/store/indumentaria-640.webp" srcset="assets/store/indumentaria-640.webp 640w, assets/store/indumentaria-1200.webp 1200w" sizes="(max-width: 760px) 92vw, 30vw" width="1200" height="900" loading="lazy" decoding="async" alt="Indumentaria del Club Ciudad de Bolívar exhibida en Celemanía"></div><span>Colección Ciudad</span><h3>Indumentaria oficial</h3><p>Prendas exhibidas en Celemanía</p><button class="demo-action" data-message="La colección visual es real; el catálogo comercial final se conectaría al stock del club.">Ver colección</button></article>
+        <article class="product-card"><div class="product-image"><img src="assets/store/merchandising-640.webp" srcset="assets/store/merchandising-640.webp 640w, assets/store/merchandising-960.webp 960w" sizes="(max-width: 760px) 92vw, 30vw" width="960" height="1280" loading="lazy" decoding="async" alt="Vasos, copas y artículos oficiales del Club Ciudad de Bolívar en Celemanía"></div><span>Accesorios</span><h3>Merchandising oficial</h3><p>Regalos y artículos del club</p><button class="demo-action" data-message="Artículos reales de Celemanía. Disponibilidad y precios se cargarían desde el panel de la tienda.">Ver productos</button></article>
       </div>
     </section>
 
     <section class="sponsors section" aria-labelledby="sponsors-title">
-      <p id="sponsors-title">Acompañan el crecimiento de Ciudad</p>
-      <div class="sponsor-row" aria-label="Espacios demostrativos para patrocinadores">
-        <span>SPONSOR<br>PRINCIPAL</span><span>ENERGÍA<br>BOLÍVAR</span><span>GRUPO<br>REGIONAL</span><span>DEPORTE<br>LOCAL</span><span>ALIADO<br>OFICIAL</span>
+      <div class="sponsors-heading reveal">
+        <p class="eyebrow"><span></span> Juntos hacemos Ciudad</p>
+        <h2 id="sponsors-title">Marcas que impulsan <em>el próximo desafío</em></h2>
+        <p>Una presencia de marca amplia, clara y jerarquizada, preparada para mostrar cada alianza con el protagonismo que merece.</p>
       </div>
+      <div class="sponsor-stage reveal" aria-label="Marcas visibles en la indumentaria presentada para 2026">
+        <article class="sponsor-card sponsor-lead"><small>Indumentaria oficial</small><strong class="masbar-mark">masbar</strong><span>Desde 2026</span></article>
+        <article class="sponsor-card la-perla"><small>Frente de camiseta</small><strong>La Perla</strong><span>Centro Comercial · Bolívar</span></article>
+        <article class="sponsor-card pm-autos"><small>Manga oficial</small><strong>PM <i>autos</i></strong><span>Movilidad</span></article>
+        <article class="sponsor-card alra-sur"><small>Aliado regional</small><img src="assets/sponsors/alra-sur-transparent.png" width="540" height="176" loading="lazy" decoding="async" alt="Alra Sur, concesionario oficial Volkswagen"><span>Concesionario Volkswagen · Bolívar</span></article>
+      </div>
+      <p class="sponsor-note">Marcas identificadas en la indumentaria oficial presentada en 2026. La nómina y jerarquías definitivas se validan con el club antes de publicar.</p>
       <button class="text-link demo-action" type="button" data-message="La propuesta final incluiría un media kit y formulario para nuevos sponsors.">Quiero acompañar al club <span>→</span></button>
     </section>
 
@@ -266,7 +299,7 @@
   </main>
 
   <footer>
-    <div class="footer-brand"><img src="assets/escudo.png" alt=""><div><strong>Club Ciudad de Bolívar</strong><span>Propuesta digital · Sitio demostrativo no oficial</span></div></div>
+    <div class="footer-brand"><img src="assets/teams/ciudad.png" width="500" height="500" alt=""><div><strong>Club Ciudad de Bolívar</strong><span>Propuesta digital · Sitio demostrativo no oficial</span></div></div>
     <nav aria-label="Enlaces de pie">
       <a href="#actualidad">Actualidad</a><a href="#partidos">Partidos</a><a href="#plantel">Plantel</a><a href="#club">Institucional</a><a href="#socios">Socios</a><a href="#contacto">Contacto</a>
     </nav>
