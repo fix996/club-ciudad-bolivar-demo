@@ -9,7 +9,7 @@ Demo conceptual de un sitio institucional y deportivo para el Club Ciudad de Bol
 - Noticias, plantel 2026 y categorías por posición.
 - Historia, infraestructura, disciplinas, inferiores y reserva.
 - Área de socios, sponsors, tienda demostrativa y contacto.
-- Escudos transparentes de Ciudad, Racing de Córdoba, Agropecuario y Defensores de Belgrano.
+- Escudos transparentes de Ciudad, Racing de Córdoba, Agropecuario, Defensores de Belgrano y Deportivo Madryn.
 - Fotografías reales del plantel, vóley, complejo y tienda Celemanía.
 - Fotografías reales de Celemanía y de la camiseta especial presentada ante River por Copa Argentina 2026.
 - Diseño responsive, accesible y sin dependencias de compilación.
@@ -50,13 +50,13 @@ Los titulares, bajadas y frases de campaña del diseño son redacción editorial
 
 ## Actualización del fixture
 
-El resultado Ciudad de Bolívar 1–1 Racing de Córdoba del 23/08/2026 y el partido ante Defensores de Belgrano del 29/08/2026 a las 16:00 fueron verificados en [Presente Noticias](https://www.presentenoticias.com/amp/noticias/2026/08/23/21343-ciudad-de-bolivar-empato-el-partido-ante-racing-de-cordoba-y-estan-1-a-1) y en la [programación de la fecha 27 informada por AFA](https://www.soloascenso.com.ar/notas/belgrano-cordoba/probables-dias-y-horarios-para-la-fecha-27-del-nacional/231625).
+El resultado Ciudad de Bolívar 1–1 Racing de Córdoba del 23/08/2026 y el partido ante Defensores de Belgrano del 29/08/2026 a las 16:00 fueron verificados en [Presente Noticias](https://www.presentenoticias.com/amp/noticias/2026/08/23/21343-ciudad-de-bolivar-empato-el-partido-ante-racing-de-cordoba-y-estan-1-a-1) y en la [programación de la fecha 27 informada por AFA](https://www.soloascenso.com.ar/notas/belgrano-cordoba/probables-dias-y-horarios-para-la-fecha-27-del-nacional/231625). El compromiso posterior es Deportivo Madryn–Ciudad de Bolívar por la fecha 28; se muestra el 05/09 con el horario pendiente de confirmación oficial porque las bases deportivas consultadas publican horarios contradictorios.
 
 La demo usa actualización manual verificada. GitHub Pages no aporta por sí mismo datos deportivos y no se conectó una API privada o no documentada que pudiera cambiar, bloquearse o publicar horarios incorrectos. En una versión oficial, el fixture debe alimentarse desde un panel administrado por el club o desde un proveedor deportivo contratado.
 
 ## Fuentes visuales de referencia
 
-- Escudos de equipos: CDN de ESPN.
+- Escudos de equipos: CDN de ESPN; Deportivo Madryn se obtuvo de Wikimedia Commons, con fuente atribuida al sitio oficial del club.
 - Indumentaria 2026: presentación fotográfica publicada por TN; la camiseta mostrada es la edición especial de Copa Argentina ante River.
 - Tienda y merchandising: apertura de Celemanía publicada por Presente Noticias.
 - Vóley: cobertura deportiva de FM10 Bolívar.
