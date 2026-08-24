@@ -98,6 +98,9 @@ em { color: var(--sky); font-style: italic; }
 .result-card div b { font: 800 1.4rem var(--display); }
 .result-card time { display: block; margin-top: .9rem; padding-top: .7rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .58rem; letter-spacing: .12em; }
 .result-card.upcoming { background: white; }
+.match-source { margin: 1rem 0 0; color: var(--muted); font-size: .58rem; line-height: 1.7; letter-spacing: .08em; text-transform: uppercase; }
+.match-source a { color: var(--blue); font-weight: 700; text-decoration: none; border-bottom: 1px solid #9bcdea; }
+.match-source a:hover, .match-source a:focus-visible { color: var(--navy); border-color: currentColor; }
 
 .news-grid { display: grid; grid-template-columns: 1.25fr .75fr; grid-template-rows: repeat(2, 250px); gap: 1.2rem; }
 .news-feature { grid-row: 1 / span 2; position: relative; min-height: 520px; overflow: hidden; background: var(--navy); }
@@ -137,7 +140,7 @@ em { color: var(--sky); font-style: italic; }
 .identity-image { position: relative; }
 .identity-image img { width: 100%; min-height: 520px; object-fit: cover; }
 .year-stamp { position: absolute; right: -1.5rem; bottom: -1.5rem; width: 155px; height: 155px; display: flex; align-items: center; justify-content: center; gap: .7rem; background: var(--sky); color: var(--navy); }
-.year-stamp strong { font: 900 4rem var(--display); }
+.year-stamp strong { font: 900 3rem var(--display); }
 .year-stamp span { font: 700 .65rem/1.35 var(--body); text-transform: uppercase; }
 .identity-copy > p:not(.eyebrow) { color: var(--muted); font-size: .9rem; line-height: 1.8; }
 .identity blockquote { margin: 2rem 0; padding-left: 1.2rem; border-left: 4px solid var(--sky); font: italic 800 2rem var(--display); text-transform: uppercase; }
