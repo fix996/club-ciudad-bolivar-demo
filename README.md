@@ -50,7 +50,7 @@ Los titulares, bajadas y frases de campaña del diseño son redacción editorial
 
 ## Actualización del fixture
 
-Los resultados Ciudad de Bolívar 1–1 Racing de Córdoba del 23/08/2026 y Ciudad de Bolívar 1–0 Defensores de Belgrano del 29/08/2026 fueron verificados en Presente Noticias. El próximo compromiso es Deportivo Madryn–Ciudad de Bolívar por la fecha 28, el domingo 06/09 a las 16:00, según la [cobertura local del último partido](https://www.presentenoticias.com/noticias/2026/08/29/21482-agonico-triunfo-de-ciudad-de-bolivar-le-gano-a-defensores-de-belgrano-sobre-la-hora-y-escalo-al-7-puesto).
+Los resultados Ciudad de Bolívar 1–1 Racing de Córdoba del 23/08/2026 y Ciudad de Bolívar 1–0 Defensores de Belgrano del 29/08/2026 fueron verificados en Presente Noticias. El próximo compromiso es Deportivo Madryn–Ciudad de Bolívar por la fecha 28, el domingo 06/09 a las 16:00, según la [cobertura local del último partido](https://www.presentenoticias.com/noticias/2026/08/29/21482-agonico-triunfo-de-ciudad-de-bolivar-le-gano-a-defensores-de-belgrano-sobre-la-hora-y-escalo-al-7-puesto). El encuentro posterior será Ciudad de Bolívar–Central Norte de Salta por la fecha 29, de acuerdo con el [fixture oficial de AFA](https://www.afa.com.ar/en/posts/primera-nacional-fixture-para-la-temporada-2026); se mantiene sin fecha ni horario hasta que exista programación oficial.
 
 La demo usa actualización manual verificada. GitHub Pages no aporta por sí mismo datos deportivos y no se conectó una API privada o no documentada que pudiera cambiar, bloquearse o publicar horarios incorrectos. En una versión oficial, el fixture debe alimentarse desde un panel administrado por el club o desde un proveedor deportivo contratado.
 
